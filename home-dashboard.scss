@@ -1,0 +1,126 @@
+#home-dashboard {
+    padding: 12px;
+    padding-top: 30px;
+    #title {
+        padding: 12px;
+        font-weight: 300;
+    }
+    #widgets {
+        padding-top: 35px;
+    }
+}
+
+.transparent-bg {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-height {
+    height: 100%;
+}
+
+.icon-plus-font {
+    font-size: 15rem;
+}
+
+.sub-plus-font {
+    font-size: 1.8rem;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.mrgn-btn {
+    margin-top: -65px;
+}
+
+.grey-color-bg {
+    background-color: grey;
+}
+
+.firm-hover {
+    background-color: #ffb85e;
+}
+    .firm-hover:hover {
+        background-color: grey;
+    }
+
+.contact-hover {
+    background-color: #66beca;
+}
+    .contact-hover:hover {
+        background-color: grey;
+    }
+
+.marketing-hover {
+    background-color: #ca98c9;
+}
+    .marketing-hover:hover {
+        background-color: grey;
+    }
+
+.pan-hover {
+    background-color: #173966;
+}
+    .pan-hover:hover {
+        background-color: grey;
+    }
+
+.learning-hover {
+    background-color: #2e8e65;
+}
+    .learning-hover:hover {
+        background-color: grey;
+    }
+
+.trust-hover {
+    background-color: #6e5475;
+}
+    .trust-hover:hover {
+        background-color: grey;
+    }
+
+.pssae-hover {
+    background-color: #231F20;
+}
+    .pssae-hover:hover {
+        background-color: grey;
+    }
+
+.fb-hover {
+    background-color: #3C5A99;
+}
+    .fb-hover:hover {
+        background-color: grey;
+    }
+
+.success-hover {
+    background-color: #89D760;
+}
+    .success-hover:hover {
+        background-color: grey;
+    }
+
+.centre-hover {
+    background-color: #dfa5a4;
+}
+
+.centre-hover:hover {
+    background-color: grey;
+}
+
+.ie-css { 
+    height: 100%; 
+    min-height: 100%; 
+    overflow: auto; 
+    -ms-overflow-style: auto; 
+} 
+
+.ie-img { 
+    flex-shrink: 0; 
+    max-width: 100%; 
+    width: 100%; 
+}

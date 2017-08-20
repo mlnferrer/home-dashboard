@@ -1,0 +1,127 @@
+<div id="home-dashboard" class="ie-css" flex>
+    <span id="title" class="md-display-1">Dashboard</span>
+    <div id="widgets">
+        <div class="widget-group" layout="row" flex="100" layout-wrap>
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+                <ms-widget-front class="firm-hover">
+                    <a ng-click="loadPage('app.firmportal')">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_firmportal.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+                <ms-widget-front class="contact-hover">
+                    <a ng-click="loadPage('app.businesslist')">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_clientportal.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25">
+                <ms-widget-front class="marketing-hover">
+                    <a ng-click="loadPage('app.previewemail')">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_marketinghub.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- TRUST ng-show="isAdmin('TRUST')" -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" ng-show="isAccessible('TRUST')">
+                <ms-widget-front class="trust-hover">
+                    <a href="#" ng-click="loadFrame($event)">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_trust.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- /TRUST -->
+            <!-- PANALITIX ng-show="isAdmin('PANALITIX')" -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" ng-show="isAccessible('PANALITIX')">
+                <ms-widget-front class="pan-hover">
+                    <a href="{{ urlPAN }}" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_panalitix.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- / PANALITIX -->
+
+            <!-- LearningHUB ng-show="isAdmin('LearningHUB')" -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" ng-show="isAccessible('LearningHUB')">
+                <ms-widget-front class="learning-hover">
+                    <a href="https://panalitix.litmos.com/account/login/" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_learninghub.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- / LearningHUB -->
+            
+            <!-- PSSAE ng-show="isAdmin('Proactive Success System')"  -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" ng-show="isAccessible('Proactive Success System')">
+                <ms-widget-front class="pssae-hover">
+                    <a href="{{urlPSS}}" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_pss.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- / PSSAE -->
+            <!-- Forum ng-show="isAdmin('Forum')" -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25"  ng-show="isAccessible('Forum')">
+                <ms-widget-front class="fb-hover">
+                    <a href="https://www.facebook.com/groups/PANALITIX/" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_facebook.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- / Forum -->
+            <!-- Success Library ng-show="isAdmin('Success Library')" -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" ng-show="isAccessible('Success Library')">
+                <ms-widget-front class="success-hover">
+                    <a href="https://www.dropbox.com/sh/cydyssv5nygkzop/AAAMelFibeyPIqwCK2JnGRjKa?dl=0&lst=" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_successlibrary.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- / Success Library -->
+            <!-- Learning Centre ng-show="isAdmin('Learning Centre')" -->
+            <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" ng-show="isAccessible('Learning Centre')">
+                <ms-widget-front class="centre-hover" style="display: inline">
+                    <a href="https://s3-ap-southeast-2.amazonaws.com/panalitix-help/learning-centre/learningcentre.html" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img class="ie-img" src="https://cdn.panalitix.com/engager/tiles/home_learningcentre.png" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget>
+            <!-- / Learning Centre -->
+            
+            <!-- THE PAC -->
+<!--             <ms-widget flippable="true" layout="column" flex="100" flex-gt-xs="50" flex-gt-md="25" >
+                <ms-widget-front>
+                    <a href="http://thepac2017.com/" target="_blank">
+                        <div class="" layout="column" layout-align="center center">
+                            <img src="https://cdn.panalitix.com/images/THE_PAC_Home_Tile_Study_2.jpg" />
+                        </div>
+                    </a>
+                </ms-widget-front>
+            </ms-widget> -->
+            <!-- / THE PAC -->
+        </div>
+    </div>
+</div>
